@@ -7,20 +7,12 @@
 ![Pokedex|Pokemon](PokedexDuelo.png)
 
 
-
-
 ## Introdução
 
 <p align="justify">
 
-Este projeto é uma aplicação web interativa que oferece uma interface para consulta da API pública POKÉAPI. O sistema possui dois modos principais: **Pokedex** e **Duelo**. No modo Pokedex, o usuário pode visualizar informações detalhadas sobre os Pokémon. No modo Duelo, o usuário pode selecionar dois Pokémon para batalhar entre si. O sistema é containerizado com Docker e hospedado na AWS.
+Este projeto é uma aplicação web interativa que oferece uma interface para consulta da API pública POKÉAPI. O sistema possui dois modos principais: **Pokedex** e **Duelo**. No modo Pokedex, o usuário pode visualizar informações detalhadas sobre o Pokémon. No modo Duelo, o usuário pode selecionar dois Pokémons para batalharem entre si. O sistema é containerizado com Docker e hospedado na AWS.
 </p>
-
-
-## URL para acesso à página
-
-Link: (http://3.228.151.74/)
-
 
 ## Entendimento dos Requisitos
 
@@ -32,10 +24,10 @@ Link: (http://3.228.151.74/)
 - Deve possuir dois modos: Pokedex e Duelo.
 </p>
 <p align="justify">
-- Modo Pokedex: O usuário pode visualizar informações sobre os Pokémon.
+- Modo Pokedex: O usuário pode visualizar informações sobre o Pokémon.
 </p>
 <p align="justify">
-- Modo Duelo: O usuário pode selecionar dois Pokémon para duelarem entre si.
+- Modo Duelo: O usuário pode selecionar dois Pokémons para duelarem entre si.
 </p>
 <p align="justify">
 - O sistema deve estar containerizado com Docker e hospedado na AWS
@@ -50,11 +42,6 @@ Link: (http://3.228.151.74/)
 
 
 ## Arquitetura do Projeto:
-
-
-<p align="center">
-    Optamos por uma arquitetura simples e monolítica, considerando que não há banco de dados e o sistema é relativamente pequeno.
-</p>
 
 
 <p align="center">
@@ -87,7 +74,7 @@ Link: (http://3.228.151.74/)
 ## Estrutura de pastas
 
  ```sh
-sprints-2-3-pb-aws-abril/
+root/
 │
 ├── docs/
 │   ├── README.md
@@ -123,21 +110,11 @@ sprints-2-3-pb-aws-abril/
 ### Passos
 1) Clone o repositório:
     ```sh
-    git clone -b grupo-7 https://github.com/Compass-pb-aws-2024-ABRIL/sprints-2-3-pb-aws-abril.git
-    cd sprints-2-3-pb-aws-abril
+    git clone https://github.com/PamelaPavan/pokeapi.git
     ```
 2) Instale as dependências:
     ```sh
-    npm install express
-    ```
-     ```sh
-    npm install axios
-    ```
-     ```sh
-    npm install helmet
-    ```
-    ```sh
-    npm install node-cache
+    npm install express axios helmet node-cache
     ```
     
 3) Rode a aplicação:
@@ -216,59 +193,6 @@ sprints-2-3-pb-aws-abril/
 
 
 
-## Recursos
-
-
-### API
-<p align="justify">
-- **PokeAPI**: Utilizamos a [PokeAPI](https://pokeapi.co/) para obter dados sobre Pokémon. Esta API gratuita fornece informações detalhadas sobre Pokémon, habilidades, tipos e muito mais.
-</p>
-
-### Backend
-<p align="justify">
-- **Node.js**: O backend da aplicação foi desenvolvido em [Node.js](https://nodejs.org/), uma plataforma JavaScript que permite construir aplicativos de rede escaláveis e de alta performance.
-- **Express.js**: Utilizamos o [Express.js](https://expressjs.com/) como framework para estruturar o servidor e gerenciar as rotas.
-</p>
-
-### Containerização
-<p align="justify">
-- **Docker**: Utilizamos [Docker](https://www.docker.com/) para containerizar nossa aplicação, garantindo que ela rode de maneira consistente em diferentes ambientes. O projeto inclui um `Dockerfile` para criar a imagem da aplicação.
-</p>
-
-### Cloud
-<p align="justify">
-- **AWS EC2**: A aplicação foi implantada em uma instância EC2 (Elastic Compute Cloud) da [Amazon Web Services (AWS)](https://aws.amazon.com/ec2/). Utilizamos EC2 pela flexibilidade e escalabilidade que oferece, permitindo ajustar os recursos computacionais conforme a demanda.
-</p>
-
-
-### Outras Ferramentas e Tecnologias
-<p align="justify">
-- **npm**: Utilizamos o [npm](https://www.npmjs.com/) como gerenciador de pacotes para instalar e gerenciar as dependências do projeto.
-</p>
-<p align="justify">
-- **Git**: Utilizamos o [Git](https://git-scm.com/) para controle de versão do código-fonte.
-<p align="justify">
-- **GitHub**: Hospedamos o repositório do código-fonte no [GitHub](https://github.com/), facilitando a colaboração e o controle de versão.
-</p>
-<p align="justify">
-- **Youtube**: Utilizamos um vídeo do canal **Manual do Dev**, chamado [Como criar uma Pokedex com HTML, CSS e JavaScript | Projeto Completo #javascript #html #css](https://youtu.be/SjtdH3dWLa8?si=aLzyVfI6eOfjudDb) como base para o HTML e CSS.
-</p>
-
-
-
-## Dificuldades Encontradas
-<p align="justify">
-1) A primeira dificuldade envolveu a divisão do trabalho para que fossem distribuídas as tarefas. Então contamos com a proatividade de cada integrante para que verificasse as demandas faltantes e as realizasse. Mas, essa não é a melhor estratégia para uma equipe. Com isso, pudemos aprender e faremos diferente na próxima oportunidade.
-</p>
-<p align="justify">
-2) Selecionar as rotas da API para serem consumidas. Dentre tantas possibilidades, precisamos filtrar o que parecia mais interessante.
-</p>
-<p align="justify">
-3) Aplicar às novas tecnologias aprendidas, como Node.js, AWS e Docker.
-</p>
-
-
-
 ## Licença
 
 
@@ -279,24 +203,9 @@ sprints-2-3-pb-aws-abril/
 
 
 
-## Autores
-
-**Arienne Alves Navarro**
-- GitHub: https://github.com/ArienneNavarro
-- Email: ariennealves465@gmail.com
-
-
-**Elizeu Santos Moreira Junior**
-- GitHub: github.com/lizeuzeu
-- Email:elizeumoreira737@gmail.com
-
+## Autor
 
 **Pâmela Aliny Cleto Pavan**
 - Linkedin: www.linkedin.com/in/pâmela-pavan-607693190
 - GitHub: https://github.com/PamelaPavan
 - Email : pamelaaliny@gmail.com
-
-
-**Thales Rodrigues Resende**
-- Github: https://github.com/tthaless
-- Email: thaleesresende@gmail.com
